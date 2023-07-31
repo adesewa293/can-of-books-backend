@@ -22,7 +22,7 @@ app.get("/", (request, response) => {
   response.send("hello");
 });
 
-app.get("/book", async (request, response) => {
+app.get("/books", async (request, response) => {
   const books = await Book.find();
   response.send(books);
 });
